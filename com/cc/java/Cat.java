@@ -2,10 +2,20 @@ package com.cc.java;
 
 public class Cat {
     
-    void tellYourAddress(){
-    // this --> Instanzvariable / instance variable
-    System.out.println("Blick von innen: " + this); 
+    public String name;
+    public String furColor;
+    public int age;
+
+    public void tellYourName(){
+        System.out.println(this.name);
+    }
+    
+    public void tellYourFurColor() {
+        System.out.println(this.furColor);
     }
 
+    public void tellYourAge() {
+        System.out.println(this.age);
+    }
 
 }

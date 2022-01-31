@@ -4,13 +4,17 @@ public class App {
     
     public static void main(String[] args) {
     
-        // Cat --> Referenztyp / reference type
-        // cat --> Referenzvariable / reference variable
-        // new Cat() --> Call des default-Konstruktors
-        Cat cat = new Cat();
-        System.out.println("Blick von aussen: " + cat);
+        Cat cat1 = new Cat();
+        cat1.tellYourName();
+        cat1.tellYourFurColor();
+        cat1.tellYourAge();
 
-        cat.tellYourAddress();
+        Cat cat2 = new Cat();
+        cat2.tellYourName();
+        cat2.tellYourFurColor();
+        cat2.tellYourAge();
+        
+        
 
 
     }
