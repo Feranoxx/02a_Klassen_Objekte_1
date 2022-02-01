@@ -14,11 +14,11 @@ public class App {
         output("Fellfarbe " + cat1.getFurColor());
         output("Alter: " + cat1.getAge());
 
-        System.out.println("-------------");
+        output("-------------");
 
         Cat cat2 = new Cat("Alonzo", "grey", 35);
 
-        cat2.furColor = "black";
+        cat2.setName("Rumple Teaser");
 
         output("Name: " + cat2.getName());
         output("Fellfarbe " + cat2.getFurColor());
