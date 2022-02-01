@@ -4,21 +4,30 @@ public class App {
     
     public static void main(String[] args) {
     
+        /** Typkonvertierung  */
+        // output(String.valueOf(2));  // int --> String
+        // output(Integer.toString(2)); // int --> String
+        // output("Das ist eine Ziffer: " + 2); // int --> String
+
         Cat cat1 = new Cat("Grizabella", "white", 29);
-        cat1.tellYourName();
-        cat1.tellYourFurColor();
-        cat1.tellYourAge();
+        output("Name: " + cat1.getName());
+        output("Fellfarbe " + cat1.getFurColor());
+        output("Alter: " + cat1.getAge());
 
         System.out.println("-------------");
 
         Cat cat2 = new Cat("Alonzo", "grey", 35);
-        cat2.tellYourName();
-        cat2.tellYourFurColor();
-        cat2.tellYourAge();
-        
-        
 
+        cat2.furColor = "black";
 
+        output("Name: " + cat2.getName());
+        output("Fellfarbe " + cat2.getFurColor());
+        output("Alter: " + cat2.getAge());
+        
+    }
+
+    public static void output(String outputStr) {
+        System.out.println(outputStr);
     }
 
 }

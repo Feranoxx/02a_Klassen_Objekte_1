@@ -12,16 +12,16 @@ public class Cat {
         this.age = age;
     }
 
-    public void tellYourName(){
-        System.out.println(this.name);
+    public String getName(){
+        return this.name;
     }
     
-    public void tellYourFurColor() {
-        System.out.println(this.furColor);
+    public String getFurColor() {
+        return this.furColor;
     }
 
-    public void tellYourAge() {
-        System.out.println(this.age);
+    public int getAge() {
+        return this.age;
     }
 
 }
