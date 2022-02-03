@@ -5,9 +5,9 @@ public class App {
     public static void main(String[] args) {
     
         /** Typkonvertierung  */
-        // output(String.valueOf(2));  // int --> String
-        // output(Integer.toString(2)); // int --> String
-        // output("Das ist eine Ziffer: " + 2); // int --> String
+        output(String.valueOf(2));  // int --> String
+        output(Integer.toString(2)); // int --> String
+        output("Das ist eine Ziffer: " + 2); // int --> String
 
         Cat cat1 = new Cat("Grizabella", "white", 29);
         output("Name: " + cat1.getName());
